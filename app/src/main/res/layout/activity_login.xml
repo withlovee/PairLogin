@@ -10,20 +10,25 @@
     tools:context=".LoginActivity">
 
     <TextView
+        android:id="@+id/tvSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="0dp"
+        android:height="50dp"
+        android:gravity="center_vertical"
         android:text="@string/sign_up"
         android:textColor="@color/white"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:height="50dp"
+        android:gravity="center_vertical"
         android:text="Next"
         android:textColor="@color/white"
         android:textSize="20sp" />
@@ -34,6 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:height="50dp"
+        android:gravity="center_vertical"
         android:text="Login"
         android:textColor="@color/white"
         android:textSize="30sp" />
@@ -56,37 +63,71 @@
         android:layout_below="@+id/tvLogo"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
-        android:padding="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
         android:background="@color/white"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:padding="10dp"
         android:textSize="20sp" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignStart="@+id/etEmail"
         android:layout_below="@+id/etEmail"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
-        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
         android:background="@color/white"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        android:padding="10dp"
         android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/tvForgot"
+        style="@android:style/TextAppearance.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Forgot password? Tap here"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/white"
-        style="@android:style/TextAppearance.Small"
-        android:id="@+id/textView3"
         android:layout_below="@+id/etPassword"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Forgot password? Tap here"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Tap here for our privacy policy."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvPolicy"
+        android:layout_centerHorizontal="true"
+        android:text="between you and your partner."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:text="Everything you share in Pair is private"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
 
 
 </RelativeLayout>
